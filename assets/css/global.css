@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+:root {
+    --color-1: #32CD32;
+    --color-2: #8B4513;
+    --color-3: #B22222;
+    --color-4: #32CD32;
+    --color-5: #8B4513;
+    --angle: 0deg;
+}
+
+body,
+html {
+    font-family: 'Silkscreen', cursive;
+    background-color: white;
+    height: 100%;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1750px;
+    position: relative;
+    height: 100%;
+    margin: auto;
+    background-color: #000000;
+}
+
+.social-accounts {
+    position: fixed;
+    display: grid;
+    right: 0%;
+    top: 41%;
+    background-color: white;
+    z-index: 2;
+    padding: 5px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 20px 0 0 20px;
+}
+
+.social-accounts .icon {
+    width: 40px;
+    height: 40px;
+}
