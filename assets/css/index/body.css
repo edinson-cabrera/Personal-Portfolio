@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px
+    padding: 20px;
+    height: 100vh;
 }
 
 .intro .content {
@@ -159,7 +160,6 @@
 /* Tech Section */
 
 .tech-section {
-    height: calc(100vh);
     background-image: url('../../images/about-me-wallpaper.png');
     background-size: cover;
     background-position: center;
@@ -171,6 +171,20 @@
     height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+    .tech-container {
+        flex-direction: column;
+        min-height: 1000px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .tech-container {
+
+        min-height: 800px;
+    }
+}
+
 .tech-container .column-1 {
     width: 35%;
     padding: 5%;
@@ -178,6 +192,17 @@
     color: white;
     align-self: center;
     text-align: center;
+    display: inline-table;
+}
+
+.tech-container .column-1 .photo-profile {
+    padding-bottom: 20px;
+}
+
+.tech-container .column-1 .photo-profile img {
+    height: 320px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 .tech-container .column-1 .info {
@@ -191,14 +216,44 @@
 }
 
 .tech-container .social-networks {
-    display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
 }
 
+.tech-container .social-networks a {
+    color: white
+}
+
 .tech-container .column-2 {
-    width: 65%;
     text-align: center;
     align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+}
+
+@media screen and (min-width: 769px) {
+    .tech-container .column-2 {
+        width: 90%;
+    }
+}
+
+.tech-container .column-2 .my-information {
+    padding: 10px;
+}
+
+.tech-container .column-2 .about-my-jobs .landit {
+    background-image: url('../../svg/landit.svg');
+    background-size: cover;
+    background-repeat: round;
+    padding: 30px;
+}
+
+.tech-container .column-2 .about-my-jobs .coolbox {
+    background-image: url('../../images/coolbox.png');
+    background-size: cover;
+    background-repeat: round;
+    padding: 30px;
 }
